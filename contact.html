@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[CAFE NAME] - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-coffee"></i> [CAFE NAME]
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="menu.html" class="nav-link">MENU</a></li>
+                <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="booking.html" class="nav-link">BOOK TABLE</a></li>
+                <li><a href="contact.html" class="nav-link nav-active">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 100px 20px; background: linear-gradient(135deg, var(--dark) 0%, #1e3a5f 100%);">
+        <div class="container">
+            <h1 style="font-size: 48px; color: var(--white); text-align: center; margin-bottom: 10px;">Contact Us</h1>
+            <p style="text-align: center; color: rgba(255,255,255,0.8); font-size: 18px;">We'd love to hear from you</p>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 80px 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-bottom: 80px;">
+            
+            <div style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md); border-top: 4px solid var(--primary);">
+                <h3 style="color: var(--primary); font-size: 22px; margin-bottom: 20px;">
+                    <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Location
+                </h3>
+                <p style="color: var(--text-light); margin-bottom: 10px;">[STREET ADDRESS]</p>
+                <p style="color: var(--text-light);">[CITY, STATE ZIP]</p>
+                <p style="margin-top: 20px; color: var(--primary); font-weight: 700;">
+                    <i class="fas fa-phone"></i> [PHONE NUMBER]
+                </p>
+            </div>
+
+            <div style="background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md); border-top: 4px solid var(--accent);">
+                <h3 style="color: var(--primary); font-size: 22px; margin-bottom: 20px;">
+                    <i class="fas fa-clock" style="margin-right: 10px;"></i> Hours
+                </h3>
+                <p style="color: var(--text-light); margin-bottom: 10px;"><strong>Monday - Friday:</strong> 6:00 AM - 8:00 PM</p>
+                <p style="color: var(--text-light); margin-bottom: 10px;"><strong>Saturday:</strong> 7:00 AM - 9:00 PM</p>
+                <p style="color: var(--text-light);<strong>Sunday:</strong> 7:00 AM - 7:00 PM</p>
+                <p style="font-size: 12px; color: #999; margin-top: 15px;">*Hours may vary during holidays</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md);">
+                <h3 style="font-size: 22px; margin-bottom: 20px;">
+                    <i class="fas fa-envelope" style="margin-right: 10px;"></i> Email
+                </h3>
+                <p style="margin-bottom: 10px;">info@[CAFENAME].com</p>
+                <p style="margin-bottom: 20px;">support@[CAFENAME].com</p>
+                <a href="mailto:info@cafe.com" class="btn btn-secondary" style="display: inline-block;">Send Email</a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="max-width: 700px; margin: 0 auto; background: var(--white); padding: 50px; border-radius: 20px; box-shadow: var(--shadow-lg);">
+            <h2 style="color: var(--dark); font-size: 32px; margin-bottom: 10px; text-align: center;">Send Us a Message</h2>
+            <p style="color: var(--text-light); text-align: center; margin-bottom: 40px;">We'll get back to you as soon as possible</p>
+
+            <form id="contactForm">
+                <div style="margin-bottom: 25px;">
+                    <label style="display: block; margin-bottom: 10px; color: var(--primary); font-weight: 700;">Name *</label>
+                    <input type="text" placeholder="Your Full Name" required style="width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <label style="display: block; margin-bottom: 10px; color: var(--primary); font-weight: 700;">Email *</label>
+                    <input type="email" placeholder="your@email.com" required style="width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <label style="display: block; margin-bottom: 10px; color: var(--primary); font-weight: 700;">Phone (Optional)</label>
+                    <input type="tel" placeholder="(555) 123-4567" style="width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <label style="display: block; margin-bottom: 10px; color: var(--primary); font-weight: 700;">Subject *</label>
+                    <input type="text" placeholder="What's this about?" required style="width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 14px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'">
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <label style="display: block; margin-bottom: 10px; color: var(--primary); font-weight: 700;">Message *</label>
+                    <textarea placeholder="Tell us what you think..." required style="width: 100%; padding: 14px; border: 2px solid var(--border); border-radius: 10px; font-size: 14px; min-height: 140px; resize: vertical; transition: all 0.3s ease;" onmouseover="this.style.borderColor='var(--primary)'" onmouseout="this.style.borderColor='var(--border)'"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- Social Media Section -->
+        <div style="margin-top: 80px; text-align: center; padding: 60px; background: linear-gradient(135deg, var(--dark), #1e3a5f); border-radius: 20px; color: white;">
+            <h2 style="font-size: 32px; margin-bottom: 20px;">Follow Us On Social Media</h2>
+            <p style="margin-bottom: 30px; opacity: 0.9;">Stay updated with our latest news and special offers</p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="#" style="width: 60px; height: 60px; background: rgba(232,115,91,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.background='var(--primary)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(232,115,91,0.2)'; this.style.transform='scale(1)'">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" style="width: 60px; height: 60px; background: rgba(232,115,91,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.background='var(--primary)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(232,115,91,0.2)'; this.style.transform='scale(1)'">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" style="width: 60px; height: 60px; background: rgba(232,115,91,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.background='var(--primary)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(232,115,91,0.2)'; this.style.transform='scale(1)'">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="width: 60px; height: 60px; background: rgba(232,115,91,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; transition: all 0.3s ease;" onmouseover="this.style.background='var(--primary)'; this.style.transform='scale(1.1)'" onmouseout="this.style.background='rgba(232,115,91,0.2)'; this.style.transform='scale(1)'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>[CAFE NAME]</h4>
+                    <p>Crafting exceptional coffee experiences since day one.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="booking.html">Book Table</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [YOUR CAFE NAME]. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Message sent! Thank you for reaching out. We\'ll respond soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
